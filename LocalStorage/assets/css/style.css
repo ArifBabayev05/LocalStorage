@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  width: 80%;
+  margin: 15px auto 0;
+}
+
+main #studentForm * {
+  margin: 7px;
+  padding: 7px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main #studentForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "name name" "age number" "button button";
+}
+
+main #studentForm input[name="name"] {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: name;
+}
+
+main #studentForm input[name="age"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: age;
+}
+
+main #studentForm input[name="number"] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: number;
+}
+
+main #studentForm button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: button;
+  outline: none;
+  background-color: #6495ed;
+  color: white;
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+main #studentForm button:active {
+  border-color: #367bfa;
+}
+
+main #studentForm input {
+  border: 3px solid #6495ed;
+  outline: none;
+}
+
+main #studentForm input:focus {
+  border: 3px solid #367bfa;
+}
+
+main .students {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid gray;
+  background-color: #ebebeb;
+  color: #2f2f2f;
+  border-radius: 15px;
+}
+
+main .students .students div {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+main .students .students div * {
+  margin: 5px;
+}
+
+main .Clear {
+  height: 30px;
+  width: 120px;
+  background-color: #ff3700;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 47%;
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
